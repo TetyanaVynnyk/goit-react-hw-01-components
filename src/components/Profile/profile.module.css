@@ -1,0 +1,58 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.avatar {
+    width: 240px;
+    height: 240px;
+    background-size: cover;
+    border-radius: 50%;
+
+}
+
+.name {
+    font-weight: bold;
+}
+
+.tag,
+.location {
+    color: gray;
+}
+
+.stats {
+    display: flex;
+    justify-items: center;
+    list-style: none;
+
+}
+
+.statsEl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    border: 1px solid gray;
+    width: 80px;
+}
+
+.label {
+    color: gray;
+}
+
+.quantity {
+    font-weight: bold;
+}

@@ -1,4 +1,4 @@
-import PropTypes from "prop-types"
+import PropTypes from 'prop-types';
 
 import styles from './statistics.module.css';
 
@@ -12,7 +12,7 @@ const Statistics = ({ title, stats }) => {
   return (
     <section className={styles.statistics}>
       {title && <h2 className={styles.title}>{title}</h2>}
-      <ul>{elements}</ul>
+      <ul className={styles.list}>{elements}</ul>
     </section>
   );
 };
@@ -20,14 +20,16 @@ const Statistics = ({ title, stats }) => {
 export default Statistics;
 
 Statistics.defaultProps = {
-  stats: []
-}
+  stats: [],
+};
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.arrayOf(PropTypes.shape({
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
-    })),
-  }
+    })
+  ),
+};

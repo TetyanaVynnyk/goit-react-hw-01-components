@@ -1,0 +1,19 @@
+.transactionHistory {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.tableHead {
+    color: white;
+    background-color: aqua;
+    font-weight: bold;
+}
+
+.tableBody {
+    color: grey;
+}
+
+.type {
+    text-transform: capitalize;
+}

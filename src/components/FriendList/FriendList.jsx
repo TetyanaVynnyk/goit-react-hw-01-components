@@ -4,7 +4,7 @@ import styles from './friendList.module.css';
 
 import FriendListItem from './FriendListItem/FriendListItem';
 
-const FriendList = ({friends}) => {
+const FriendList = ({ friends }) => {
   const elements = friends.map(friend => (
     <FriendListItem key={friend.id} {...friend} />
   ));
@@ -23,6 +23,7 @@ FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
+      avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
     })

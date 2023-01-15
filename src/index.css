@@ -1,4 +1,5 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
+/* bring in normalize.css styles */
 
 body {
   margin: 0;
@@ -23,14 +24,24 @@ h6,
 p {
   margin: 0;
 }
+
 ul,
 ol {
   text-decoration: none;
   margin: 0;
   padding: 0;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  /* border-collapse: collapse; */
+  padding: 5px;
 }
